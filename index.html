@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lorem Ipsum Bookmarklet // webb.tj</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
+</head>
+<body>
+    <h1>The Lorem Ipsum Bookmarklet</h1>
+    <h3>What is it?</h3>
+    <p>Ever have to put in a bunch of dummy content and have to keep going back and forth to a Lorem Ipsum generator? Well, add this bookmarklet and replace that annoying task with a simple mouse click.</p>
+    <h3>How does it work?</h3>
+    <p>Add the Lorem Ipsum Bookmarklet Button below to your browser's bookmark bar (drag and drop). Then any time you need to fill in a textarea with dummy text, simply click the bookmarklet in your bookmark bar. Each click will generate one paragraph of Lorem Ipsum goodness.</p>
+    <h3>Get it!</h3>
+    <p>Drag the button below to your browser's bookmark bar.<p>
+        <p><a class="lorem" href="javascript:(function lipsum_button(){var s = document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','http://lipsum.webb.tj/script?'+Math.random());s.setAttribute('id', 'lipsum-bookmarklet-script');var th = document.getElementsByTagName('head')[0];th.appendChild(s);})()">Lorem</a></p>
+        <h3>Known Issues</h3>
+        <p>As this works by targeting the currently focused element in the document, if the element is within a frame the bookmarklet will not work. This is because at level of the top document, the focused element is the frame, not the textarea within it</p>
+        <h3>Try it out!</h3>
+        <p>After installing, <a href="demo.html">click here</a> to try it out.</p>
+        <p class="footer">Tested in Chrome 22, Firefox 13 and Safari 5.1.5.</p>
+    </body>
+    </html>
